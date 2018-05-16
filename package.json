@@ -4,12 +4,14 @@
     "fastify": "^1.4.0"
   },
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "test": "jest --watch"
   },
   "devDependencies": {
     "jest": "^22.4.3",
     "mocha": "^5.1.1",
     "power-assert": "^1.5.0",
+    "supertest": "^3.1.0",
     "tap": "^11.1.5"
   }
 }

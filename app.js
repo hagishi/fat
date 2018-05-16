@@ -1,13 +1,9 @@
 const Fastify = require('fastify');
 
-function buildFastify() {
-  const fastify = Fastify();
+const app = Fastify();
 
-  fastify.get('/', function(request, reply) {
-    reply.send({ hello: 'world' });
-  });
+app.get('/', function(request, reply) {
+  reply.send({ hello: 'world' });
+});
 
-  return fastify;
-}
-
-module.exports = buildFastify;
+module.exports = app;
